@@ -7,7 +7,7 @@ A totally customisable jQuery plugin to Create Hexagon grid from images.
 
 ## How to use
 
-### Html Markup
+#### Html Markup 
 ``` html
 <div class="hex-wrapper">
 	<img src="http://placehold.it/150x150/FF2A7F/fff.png&text=Pink" title="Image Title to show" data-src="http://placehold.it/500x500/FF2A7F/fff.png&text=Pink Large" />
@@ -20,7 +20,7 @@ A totally customisable jQuery plugin to Create Hexagon grid from images.
 </div>
 ```
 
-### jQuery Code
+#### jQuery Code
 ``` javascript
 jQuery(document).ready(function($)
 {
