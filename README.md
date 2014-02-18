@@ -1,4 +1,4 @@
 hexagon_grid
 ============
 
-Create Hexagon grid from images
+A jQuery plugin to Create Hexagon grid from images
