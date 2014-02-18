@@ -79,7 +79,7 @@
     		// making rows
     		while(index < cells.length)
     		{
-    			var larger_row = (even_row && o.is_even_row_larger);
+    			var larger_row = (even_row ? o.is_even_row_larger : !o.is_even_row_larger);
     			var first = cells.eq(index).addClass('first-cell');
 				first.prev().addClass('last-cell');
 				
