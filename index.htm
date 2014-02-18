@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html" />
+	<meta name="author" content="Aatif Farooq" />
+	<title>Hexagon Demo</title>
+	
+	<link href="aa_hexagon.css" rel="stylesheet" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+	
+	<script src="aa_hexagon.js"></script>
+	<script>
+	jQuery(document).ready(function($)
+	{
+		$('.hex-wrapper img').aa_hexagon_grid({
+			width: 120,
+			distance: 14,
+			is_even_row_larger: true,
+		});
+		
+		$('.hex-wrapper-2 img').aa_hexagon_grid({
+			width: 120,
+			distance: 4,
+			columns: 4,
+			is_even_row_larger: false,
+		});
+	});
+	</script>
+	
+	<style>
+	body{
+		background: #111;
+	}
+	.page{
+		font-family: verdana;
+		width: 960px;
+		margin: 0 auto;
+	}
+	h1{
+		color: #fff;
+	}
+	
+	code{
+		white-space: pre;
+		background: #333;
+		border: 1px solid #555;
+		border-radius: 5px;
+		
+		display: block;
+		color: #eee;
+		margin: 10px 0 35px;
+	}
+	</style>
+</head>
+
+<body>
+	<div class="page">
+		<h1>Demo with auto Columns</h1>
+		<div class="hex-wrapper">
+			<img src="http://placehold.it/150x150/FF2A7F/fff.png&text=Pink" title="Image Title to show" data-src="http://placehold.it/500x500/FF2A7F/fff.png&text=Pink Large" />
+			<img src="http://placehold.it/150x150/FF7F7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FF7F7F/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/2AFF7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/2AFF7F/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/AAFFD4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/AAFFD4/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/7F55FF/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/7F55FF/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/D42AFF/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/D42AFF/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/FFAA7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FFAA7F/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/FFFF2A/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FFFF2A/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/FF7F00/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FF7F00/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/FF00D4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FF00D4/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/2AFF7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/2AFF7F/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/79CE4E/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/79CE4E/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/DE34B4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/DE34B4/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/34DEDE/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/34DEDE/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/EF1A45/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/EF1A45/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/7F55FF/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/7F55FF/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/79CE4E/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/79CE4E/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/AAFFD4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/AAFFD4/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/7F55FF/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/7F55FF/fff.png&text=Large" />
+		</div>
+		<code>
+	$('.hex-wrapper img').aa_hexagon_grid({
+		width: 120,
+		distance: 14,
+		is_even_row_larger: true,
+	});
+		</code>
+		
+		<h1>Demo with 4 Columns</h1>
+		<div class="hex-wrapper-2">
+			<img src="http://placehold.it/150x150/FF2A7F/fff.png&text=Pink" title="Image Title to show" data-src="http://placehold.it/500x500/FF2A7F/fff.png&text=Pink Large" />
+			<img src="http://placehold.it/150x150/FF7F7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FF7F7F/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/2AFF7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/2AFF7F/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/AAFFD4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/AAFFD4/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/7F55FF/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/7F55FF/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/D42AFF/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/D42AFF/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/FFAA7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FFAA7F/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/FFFF2A/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FFFF2A/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/FF7F00/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FF7F00/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/FF00D4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/FF00D4/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/2AFF7F/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/2AFF7F/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/79CE4E/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/79CE4E/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/DE34B4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/DE34B4/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/34DEDE/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/34DEDE/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/EF1A45/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/EF1A45/fff.png&text=Large" />
+			
+			<img src="http://placehold.it/150x150/7F55FF/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/7F55FF/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/79CE4E/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/79CE4E/fff.png&text=Large" />
+			<img src="http://placehold.it/150x150/AAFFD4/fff.png&text=Small" title="Image Title to show" data-src="http://placehold.it/500x500/AAFFD4/fff.png&text=Large" />
+		</div>
+		<code>
+	$('.hex-wrapper-2 img').aa_hexagon_grid({
+		width: 120,
+		distance: 4,
+		columns: 4,
+		is_even_row_larger: false,
+	});
+		</code>
+	</div>
+</body>
+</html>
